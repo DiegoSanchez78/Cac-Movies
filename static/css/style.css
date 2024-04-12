@@ -22,12 +22,8 @@ body {
     background-color: var(--bg-color)
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
     background-color: var(--bg-color);
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -66,7 +62,7 @@ h2{
     margin: 0 auto;
     border: solid 1px var(--color-1);
 }
-.btn-cac{
+.btn-cac:hover{
     background-color: var(--color-2);
     color: var(--color-1);
     padding: 5px;
@@ -78,14 +74,16 @@ h2{
     /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; */
-    
+    /* width: fit-content; */
     background-color: rgb(0, 53, 53);
 }
 .info-card{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
     background-color: var(--color-2);
+    color: var(--color-1);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+
 }
 #search{
     display: flex;
@@ -95,4 +93,35 @@ h2{
     top: 0;
     left: 0;
     z-index: 9999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+div a img{
+    width: 200px;
+    height: 300px;
+    /* border-radius: 50%; */
+}
+
+.container-movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
